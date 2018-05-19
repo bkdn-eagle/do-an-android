@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.doantotnghiep">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAHe6IlPl2dwuyrEbSOtHqoR3fFjQ6VMV0"/>
+        <activity android:name=".View.FlashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.DangNhapActivity">
+        </activity>
+        <activity android:name=".View.TrangChuActivity">
+        </activity>
+        <activity android:name=".View.DangKyActivity">
+        </activity>
+        <activity android:name=".View.KhoiPhucMatKhauActivity">
+        </activity>
+        <activity android:name=".View.ChiTietQuanAnActivity">
+        </activity>
+        <activity android:name=".View.HienThiChiTietBinhLuan">
+        </activity>
+        <activity android:name=".View.CapNhatDanhSachWifiActivity">
+        </activity>
+        <activity android:name=".View.PopupCapNhatWifiActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+        </activity>
+        <activity android:name=".View.DanDuongToiQuanAnActivity">
+        </activity>
+        <activity android:name=".View.BinhLuanActivity">
+        </activity>
+        <activity android:name=".View.ChonHinhBinhLuanActivity">
+        </activity>
+        <activity android:name=".View.ThemQuanAnActivity">
+
+        </activity>
+        <activity android:name=".View.ThanhVienActivity">
+
+        </activity>
+        <activity android:name=".View.HienThiHinhAnhQuanAn">
+
+        </activity>
+        <activity android:name=".View.WebSiteActivity">
+
+        </activity>
+        <activity android:name=".View.GameAndFunActivity">
+
+        </activity>
+    </application>
+
+</manifest>

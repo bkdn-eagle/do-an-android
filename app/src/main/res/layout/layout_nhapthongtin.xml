@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edNhapSoDienThoai"
+        android:layout_width="match_parent"
+        android:hint="Nhập số điện thoại của bạn"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/edNhapDiaChi"
+        android:layout_width="match_parent"
+        android:hint="Nhập địa chỉ của bạn"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btnDiaChi"
+        android:layout_width="match_parent"
+        android:text="OK"
+        android:layout_height="wrap_content" />
+</LinearLayout>

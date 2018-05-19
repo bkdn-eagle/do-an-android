@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/containerBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cicleImageUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:src="@drawable/background"
+            android:text="6.8"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTieudebinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gogi House"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNodungbinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 Hà Đông 3 Thanh Khê" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtChamDiemBinhLuan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="6.6" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerHinhBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnnlove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/nlove"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/colorRed"
+                android:background="@color/colorAccent"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btnlove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/love"
+                android:padding="5dp"
+                android:text="0"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

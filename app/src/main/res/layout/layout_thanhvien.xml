@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cicleImageUser"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:src="@drawable/background"
+        android:textColor="@color/colorAccent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/edTenThanhVien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:hint="Mời bạn nhập tên mới"
+            android:visibility="gone"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvThanhVien"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Trường Đạt" />
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/btnLuuThanhVien"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Lưu cập nhật" />
+
+    <ImageView
+        android:id="@+id/imgHinhThanhVien"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+       />
+</LinearLayout>
